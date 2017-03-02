@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<form class="form-horizontal" role="form">
+
+	<div class="form-group">
+		<label class="control-label col-sm-4" for="myname" style="">Name<span class="asterisk">*</span></label>
+		<div class="col-sm-7">
+			<div>
+				<input type="text" class="form-control" id="myname">
+			</div>
+		</div>
+	</div>
+
+
+	<div class="form-group">
+		<label class="control-label col-sm-4" for="myimage">Image</label>
+		<div class="col-sm-7">
+			<div>
+				<input type="file" (change)="fileChangeEvent($event)" placeholder="Upload file..." />
+			</div>
+		</div>
+	</div>
+
+
+	<div class="form-group">
+		<div class="text-center">
+			<button type="button" (click)="upload()">Upload</button>
+		</div>
+	</div>
+</form>
