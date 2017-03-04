@@ -20,7 +20,10 @@
   </ItemGroup>
   <ItemGroup>
     <!-- Files not to show in IDE -->
+    <None Remove=".gitignore" />
+    <None Remove="README.md" />
     <None Remove="yarn.lock" />
+    <Compile Remove="ClientApp\dist\**" />
     <Compile Remove="TorrentClient\**" />
     <Compile Remove="Torrent\**" />
 
@@ -28,8 +31,10 @@
     <Content Remove="ClientApp\**" />
     <Content Remove="TorrentClient\**" />
     <Content Remove="Torrent\**" />
+    <EmbeddedResource Remove="ClientApp\dist\**" />
     <EmbeddedResource Remove="TorrentClient\**" />
     <EmbeddedResource Remove="Torrent\**" />
+    <None Remove="ClientApp\dist\**" />
     <None Remove="TorrentClient\**" />
     <None Remove="Torrent\**" />
   </ItemGroup>
