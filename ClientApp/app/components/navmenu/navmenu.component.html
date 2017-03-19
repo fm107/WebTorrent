@@ -1,4 +1,4 @@
-<div class='main-nav'>
+<!--<div class='main-nav'>
     <div class='navbar navbar-inverse'>
         <div class='navbar-header'>
             <button type='button' class='navbar-toggle' data-toggle='collapse' data-target='.navbar-collapse'>
@@ -7,7 +7,7 @@
                 <span class='icon-bar'></span>
                 <span class='icon-bar'></span>
             </button>
-            <a class='navbar-brand' [routerLink]="['/home']">A2</a>
+            <a class='navbar-brand' [routerLink]="['/home']">Web Torrent</a>
         </div>
         <div class='clearfix'></div>
         <div class='navbar-collapse collapse'>
@@ -32,7 +32,101 @@
                         <span class='glyphicon glyphicon-th-list'></span> Upload File
                     </a>
                 </li>
+                <li [routerLinkActive]="['link-active']">
+                    <a [routerLink]="['/puzzle']">
+                        <span class='glyphicon glyphicon-th-list'></span> Start a Puzzle
+                    </a>
+                </li>
             </ul>
         </div>
     </div>
+</div>-->
+
+
+<div>
+    <p-toolbar class='prim-main-nav'>
+        <div class='clearfix'></div>
+        <ul class='nav navbar-nav'>
+            <li [routerLinkActive]="['link-active']">
+                <a [routerLink]="['/home']">
+                    <span class='glyphicon glyphicon-home'></span> Home
+                </a>
+            </li>
+            <li [routerLinkActive]="['link-active']">
+                <a [routerLink]="['/counter']">
+                    <span class='glyphicon glyphicon-education'></span> Counter
+                </a>
+            </li>
+            <li [routerLinkActive]="['link-active']">
+                <a [routerLink]="['/fetch-data']">
+                    <span class='glyphicon glyphicon-th-list'></span> Fetch data
+                </a>
+            </li>
+            <li [routerLinkActive]="['link-active']">
+                <a [routerLink]="['/puzzle']">
+                    <span class='glyphicon glyphicon-th-list'></span> Start a Puzzle
+                </a>
+            </li>
+        </ul>
+        <div class="ui-toolbar-group-right" id="dialog">
+            <upload #dialog></upload>
+            <button pButton type="button" icon="fa fa-upload" (click)="dialog.showDialog=true"></button>
+        </div>
+    </p-toolbar>
 </div>
+
+
+<!--<div class='prim-main-nav'>
+    <p-toolbar>
+
+        <div class='navbar-collapse collapse'>
+            <ul class='nav navbar-nav'>
+                <li [routerLinkActive]="['link-active']">
+                    <a [routerLink]="['/home']">
+                        <span class='glyphicon glyphicon-home'></span> Home
+                    </a>
+                </li>
+                <li [routerLinkActive]="['link-active']">
+                    <a [routerLink]="['/counter']">
+                        <span class='glyphicon glyphicon-education'></span> Counter
+                    </a>
+                </li>
+                <li [routerLinkActive]="['link-active']">
+                    <a [routerLink]="['/fetch-data']">
+                        <span class='glyphicon glyphicon-th-list'></span> Fetch data
+                    </a>
+                </li>
+                <li [routerLinkActive]="['link-active']">
+                    <a [routerLink]="['/upload']">
+                        <span class='glyphicon glyphicon-th-list'></span> Upload File
+                    </a>
+                </li>
+                <li [routerLinkActive]="['link-active']">
+                    <a [routerLink]="['/puzzle']">
+                        <span class='glyphicon glyphicon-th-list'></span> Start a Puzzle
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="ui-toolbar-group-left">
+            <button pButton type="button" label="New" icon="fa-plus"></button>
+            <button pButton type="button" label="Open" icon="fa-folder-open"></button>
+
+            <i class="fa fa-bars"></i>
+
+            <p-splitButton label="Save" icon="fa-check" [model]="items"></p-splitButton>
+        </div>
+
+        <div class="ui-toolbar-group-right">
+            <button pButton type="button" icon="fa-search"></button>
+            <i class="fa fa-bars"></i>
+            <button pButton type="button" icon="fa-refresh"></button>
+            <button pButton type="button" icon="fa-trash"></button>
+        </div>
+    </p-toolbar>
+</div>
+<div class='clearfix'></div>-->
+
+
+

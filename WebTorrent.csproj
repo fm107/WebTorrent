@@ -26,17 +26,21 @@
     <Compile Remove="ClientApp\dist\**" />
     <Compile Remove="TorrentClient\**" />
     <Compile Remove="Torrent\**" />
+    <Compile Remove="wwwroot\css\themes\**" />
 
     <!-- Files not to publish (note that the 'dist' subfolders are re-added below) -->
     <Content Remove="ClientApp\**" />
     <Content Remove="TorrentClient\**" />
     <Content Remove="Torrent\**" />
+    <Content Remove="wwwroot\css\themes\**" />
     <EmbeddedResource Remove="ClientApp\dist\**" />
     <EmbeddedResource Remove="TorrentClient\**" />
     <EmbeddedResource Remove="Torrent\**" />
+    <EmbeddedResource Remove="wwwroot\css\themes\**" />
     <None Remove="ClientApp\dist\**" />
     <None Remove="TorrentClient\**" />
     <None Remove="Torrent\**" />
+    <None Remove="wwwroot\css\themes\**" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="TorrentClient\Torrent.Client.csproj" />
@@ -45,6 +49,10 @@
     <None Update="ClientApp\app\components\TestComponent\file.ts">
       <DependentUpon>htmlpage.html</DependentUpon>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="ClientApp\app\components\uploadfile\" />
+    <Folder Include="Properties\" />
   </ItemGroup>
   <Target Name="RunWebpack" AfterTargets="ComputeFilesToPublish">
     <!-- As part of publishing, ensure the JS resources are freshly built in production mode -->

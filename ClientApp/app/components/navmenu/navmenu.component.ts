@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild, AfterViewInit  } from '@angular/core';
+import { UploadComponent} from '../uploadfile/upload.component';
 
 @Component({
     selector: 'nav-menu',

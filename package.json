@@ -8,6 +8,7 @@
     "node": "7.5.0"
   },
   "dependencies": {
+    "primeng": "^2.0.0",
     "@angular/common": "^2.4.5",
     "@angular/compiler": "^2.4.5",
     "@angular/core": "^2.4.5",
